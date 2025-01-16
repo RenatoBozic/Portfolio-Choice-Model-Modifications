@@ -132,6 +132,7 @@ size(Policy)
 
 zind_1=floor(n_z(1)+1)/2; 
 zind_2=floor(n_z(2)+1)/2;
+
 figure(1)
 subplot(2,1,1); surf(a_grid*ones(1,Params.J),ones(n_a,1)*(1:1:Params.J),reshape(V(:,zind_1,zind_2,:),[n_a,Params.J]))
 title('Value function: median value of z')
