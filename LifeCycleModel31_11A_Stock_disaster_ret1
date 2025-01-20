@@ -106,6 +106,13 @@ simoptions.pi_u=pi_u;
 simoptions.a_grid=a_grid;
 simoptions.d_grid=d_grid;
 
+vfoptions.n_e = n_e;
+vfoptions.e_grid = e_grid;
+vfoptions.pi_e = pi_e;
+simoptions.n_e = n_e;
+simoptions.e_grid = e_grid;
+simoptions.pi_e = pi_e;
+
 %% Now, create the return function 
 DiscountFactorParamNames={'beta','sj'};
 
