@@ -25,7 +25,6 @@ Params.sigma=5;
 
 % Prices
 Params.w=1;
-Params.e = 1;
 
 % Asset returns
 Params.r=0.02; 
