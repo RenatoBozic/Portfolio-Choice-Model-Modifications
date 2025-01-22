@@ -25,6 +25,7 @@ Params.sigma=5;
 
 % Prices
 Params.w=1;
+Params.e = 1;
 
 % Asset returns
 Params.r=0.02; 
@@ -85,7 +86,7 @@ z2_grid=z2_grid./mean_z2;
 
 % Markov shock z3 (Do not know if this is correctly setted)
 z3_grid=[1;0.5];
-pi_z3=[0.9, 0.1; 0, 1];
+pi_z3=[0.95, 0.05; 0, 1];
 
 % Combine z1, z2 and z3 together
 z_grid=[z1_grid; z2_grid; z3_grid];
@@ -218,7 +219,7 @@ StationaryDist=StationaryDist_FHorz_Case1(jequaloneDist,AgeWeightsParamNames,Pol
 %% FnsToEvaluate are how we say what we want to graph the life-cycles of
 FnsToEvaluate.riskyshare=@(savings,riskyshare,a,z1,z2,z3) riskyshare; 
 FnsToEvaluate.stockmarketparticpation=@(savings,riskyshare,a,z1,z2,z3) (savings>0)*(riskyshare>0);
-FnsToEvaluate.earnings=@(savings,riskyshare,a,z1,z2,w,kappa_j,z3) w*kappa_j*z1*z2*z3; 
+FnsToEvaluate.earnings=@(savings,riskyshare,a,z1,z2,z3,w,kappa_j) w*kappa_j*z1*z2; 
 FnsToEvaluate.assets=@(savings,riskyshare,a,z1,z2,z3) a; 
 
 %% Calculate the life-cycle profiles
