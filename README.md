@@ -1,5 +1,5 @@
-These are the codes for the modified life-cycle portfolio-choice models. 
+Here are the codes for the modified models.
 
-The models can be run using the VFI Toolkit, which was created by Robert Kirkby. 
+The codes for initial models were created by Robert Kirkby.
 
-More information can be found on the page: https://www.vfitoolkit.com/
+All models can be run with the VFI Toolkit. See: https://www.vfitoolkit.com/.
